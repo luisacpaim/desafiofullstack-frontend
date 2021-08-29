@@ -1,0 +1,211 @@
+/*IMPORT Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap'); /*Fonte Externa - Indie Flower*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo:ital,wght@0,200;1,200&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    color: rgb(90, 6, 6);
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background: url(../img/background.jpg);
+    background-size: cover;  
+    width: 100%;
+}
+
+header .principal {
+    font-size: 16px;
+    
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.100)), url('../img/img2.jpg');
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;       
+    justify-content: center;
+    align-items: flex-start;
+
+
+    margin-bottom: 5vh;   
+}
+
+header .titulo_principal {
+    margin-top: 08%;
+    font-size: 95px;
+    font-family: 'Yomogi', cursive; /*'Trebuchet MS', Arial, sans-serif;*/
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+header .descricao {
+   margin-left: 2.5vw;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-family:'Exo', sans-serif;
+    font-weight: bold;
+}
+
+.principal .container {
+    width: 35%;
+    margin-left: 5vw;
+}
+
+header .botao {
+    background-color: rgba(0,0,0,.50); /*rgba(209, 221, 43, 0.5);*/
+    border: none;
+    color: rgb(237, 236, 236) ;
+    text-decoration: none;
+    font-weight: normal;
+
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 15%;
+    margin-left: 5vw;
+
+    cursor: pointer;
+    transition: .3s ease all;    
+}
+
+header .botao:hover {
+    background-color: white;
+    color: black;
+}
+
+header .botao i {
+    margin-right: 5px;
+}
+
+
+/* Setinha */
+#plus {
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* QUEM SOMOS */
+
+#quemsomos {
+    margin: 10px 20px;
+    width: auto;
+    margin-bottom: 2rem;
+}
+
+/* FORMULÁRIO */
+
+main {
+    text-align: center;   
+}
+
+main .title-form {
+    font-size: 25px;
+    font-weight: normal;
+    font-style: oblique;
+    
+    padding: 1.5rem 2rem;
+}
+
+#dados {    
+    margin-top: 20px;
+}
+
+#formulario {
+    margin: 10px 20px;
+    border: 2px ridge rgb(90, 6, 6);
+    width: 100%;
+} 
+
+legend {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+fieldset {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+
+    width: 80vw;
+    margin: 3vh auto;
+    
+    border: none;
+}
+
+main div h5 {
+    color: #000;
+    font-style: oblique;
+
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.campos {
+    padding: 0 10px 0 5px;
+}
+
+
+/* CAIXINHAS */
+input, select {
+    margin-bottom: 15px;
+    border: 0.5px ridge rgb(177, 177, 177);
+    border-radius: 7%;
+    background-color: blanchedalmond;
+}
+
+.grande {
+    width: 145px;
+}
+
+.medio {
+    width: 90px;
+}
+
+.pequeno {
+    width: 60px;
+}
+
+#buttonenviar:hover {
+    cursor: pointer;
+    transition: ease-in;
+    background-color: rgb(203, 203, 203);
+}
+
+footer{
+    
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #631463; */
+}
+
+footer p a:hover{
+    color: #da852d;
+    text-decoration: underline;
+}

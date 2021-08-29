@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!--Font Awesome-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Importando Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- Funções JS -->
+    <script src="./script/script.js"></script>
+
+    <title> .: Landing Page - JobsNET :. </title>
+</header>
+  
+<body>
+
+    <header>
+
+        <div class="principal">
+            <div class="container">            
+                               
+                <h3 class="titulo_principal">JobsNET</h3>
+                <p class="descricao"> unindo você ao seu próximo desafio </p>
+               
+                <div class="botoes">
+                    <button role="button" class="botao" onclick="displayAbout()" >
+                        <i class="fas fa-info-circle"></i>
+                        CANDIDATE-SE
+                    </button>    
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+   
+    <main>
+
+          <div id="quemsomos">
+           <p> Estamos no mercado há 25 anos. <br/>
+               Nossa missão é intermediar vagas de emprego, facilitando a conexão das nossas empresas parceiras com potenciais talentos; e unir nossos talentos ao futuro desafio de sua carreira.
+           </p>
+        </div>
+
+        <div onclick="displayAbout()" id="plus">     
+            <i id="animation" class="fas fa-angle-double-down"></i>
+        </div>
+
+      
+
+        <div id="formulario" onchange="Formulario()" style="display: none;" >  
+
+             <h3 class="title-form"  > Formulário para Candidatura </h3> 
+
+                  <form id="formCadastro" > <!-- action="localhost:1235/cadastrado" -->
+
+                    <legend> DADOS PESSOAIS </legend>
+                    <fieldset>
+                        
+                        <div class="campos">
+                            <h5> Nome completo*: </h5>
+                            <input type="text" value="" name="nomeCompleto" id="nomeCompleto" size="55" required>
+                        </div>
+                        <div class="campos">
+                            <h5> Data de Nascimento*: </h5>
+                            <input class="grande" type="text" value="" name="dataNascimento" id="dataNascimento" placeholder="00/00/0000"required>
+                        </div>
+                        <div class="campos">
+                            <h5> Estado Civil: </h5>
+                            <select class="medio" value="" name="estCivil" id="estCivil">            
+                            <option value="titulo">  </option>
+                            <option value="solteirx"> Solteira(o) </option>
+                            <option value="casadx"> Casada(o) </option>
+                            <option value="separadx"> Separada(o) | Divorciada(o) </option>
+                            <option value="viuvx"> Viúva(o) </option>
+                            </select>
+                        </div>
+                        <div class="campos">
+                            <h5> Gênero: </h5>
+                            <select class="medio" value="" name="genero" id="genero">
+                                <option value="titulo">  </option>
+                                <option value="mulhercis"> Mulher Cis </option>
+                                <option value="mulhertrans"> Mulher Trans </option>
+                                <option value="homemcis"> Homem Cis </option>
+                                <option value="homemtrans"> Homem Trans </option>
+                                <option value="naobinario"> Não Binário </option>
+                                <option value="naoinforma"> Prefiro não responder </option>
+                            </select>
+                        </div>             
+                        <div class="campos">
+                            <h5> CEP*: </h5>
+                            <input  name="cep"  type="text" id="cep" value="" size="25" maxlength="8"  pattern="[0-9]{8}"  placeholder=" Ex.: 00000000" onblur="pesquisacep(this.value);"  required/><br />
+                        </div>      
+                        <div class="campos">
+                            <h5> Endereço*:  </h5>
+                            <input name="rua" value="" type="text" id="rua" size="50" required /><br />
+                        </div>
+                        <div class="campos">
+                            <h5> Número*:  </h5>
+                            <input  type="text" value="" name="numero" id="numero" size="5" required />
+                        </div>
+                        <div class="campos">
+                            <h5> Bairro*: </h5>
+                            <input name="bairro" value="" type="text" id="bairro" size="30" required />
+                        </div>
+                        <div class="campos">
+                            <h5> Cidade*: </h5> 
+                            <input name="cidade" value="" type="text" id="cidade" size="40" required />
+                        </div>                       
+                        <div class="campos">
+                            <h5> Estado*: </h5>
+                            <input name="uf" value="" type="text" id="uf" size="5" required />
+                        </div>
+                        <div class="campos">
+                            <h5> Celular*: </h5>
+                            <input type="text" value="" name="celular" id="celular" size="25" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder=" Ex.: 00 00000-0000" required>
+                        </div>
+                        <div class="campos">
+                            <h5> E-mail*: </h5>
+                            <input  type="email" value="" name="email" id="email" size="30" placeholder=" Ex.: meunome@email.com" required> 
+                        </div>
+                        <div class="campos">
+                            <h5> Profissão*: </h5>
+                            <input   type="text" value="" name="profissao" id="profissao" size="30" required>  
+                        </div>
+                    </fieldset>
+        
+    
+                    <legend> DOCUMENTOS </legend>
+                    <fieldset>
+                        <div class="campos">              
+                        <h5> Identidade*: </h5>
+                        <input  type="text" value="" name="identidade" id="identidade" size="25" required >
+                        </div>
+                        <div class="campos">
+                        <h5> CPF*: </h5>
+                        <input  type="text" value="" name="cpf" id="cpf"  size="25" maxlength="14" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required >
+                        </div>
+                        <div class="campos">
+                        <h5> Possui Veículo: </h5>
+                        <select class="medio" value="" name="veiculo" id="veiculo">            
+                            <option value="titulo">  </option>
+                            <option value="simVeiculo"> Sim </option>
+                            <option value="naoVeiculo"> Não </option>
+                        </select>
+                        </div>
+                        <div class="campos">
+                        <h5> Habilitação: </h5>
+                        <select class="medio" value="" name="habilitacao" id="habilitacao">            
+                            <option value="titulo">  </option>
+                            <option value="simA"> A </option>
+                            <option value="simB"> B </option>
+                            <option value="simAeB"> A e B </option>
+                            <option value="simC"> C </option>
+                            <option value="simD"> D </option>
+                            <option value="simE"> E </option>
+                        </select>
+                        </div>
+                    </fieldset> 
+                        
+                        <input id="buttonenviar" type="submit" value=" Enviar " onclick="criarCandidato()">                
+                
+                </id=>
+         </div>       
+    </main>
+    
+    <footer>
+        <p> Desenvolvido por <a target="_blanket" href="https://www.linkedin.com/in/luisacristinaferreira/" id="linkedin">Luísa Cristina</a> como desafio final da Jornada FullStack Gama Academy. </p>
+    </footer>
+
+
+</body>
+</html>
