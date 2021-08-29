@@ -27,8 +27,7 @@ const Formulario = () => {
 
 const criarCandidato = async (candidato) => {
 
-    const requisicao = await fetch('http://https://git.heroku.com/api-cadastrocandidatos.git
-/register', {
+    const requisicao = await fetch('http://https://git.heroku.com/api-cadastrocandidatos.git/register', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
@@ -122,6 +121,6 @@ function limpa_formulário_cep() {
         plus.classList.toggle('rotate');
         var plus = document.getElementById('formulario');
         plus.classList.toggle('active');
-    }
+    };
 
 
