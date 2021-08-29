@@ -27,7 +27,8 @@ const Formulario = () => {
 
 const criarCandidato = async (candidato) => {
 
-    const requisicao = await fetch('http://localhost:1235/register', {
+    const requisicao = await fetch('http://https://git.heroku.com/api-cadastrocandidatos.git
+/register', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
