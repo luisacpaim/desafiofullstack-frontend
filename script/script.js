@@ -41,7 +41,7 @@ const criarCandidato = async (candidato) => {
 
     if (requisicao.status === 500) {
         alert('Seu CPF ou E-mail já foi cadastrado. Tente novamente.');
-    }
+    } 
 }
 
 
